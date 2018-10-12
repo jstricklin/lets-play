@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import PlayerOne from './playerOne';
 import PlayerTwo from './playerTwo';
 import ScoreTracker from './scoreTracker';
@@ -14,7 +14,7 @@ class GameBoard extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="game-board">
                 <PlayerOne></PlayerOne>
                 GameBoard
                 <PlayerTwo></PlayerTwo>

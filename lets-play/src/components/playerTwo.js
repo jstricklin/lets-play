@@ -1,20 +1,14 @@
+import React, { Component } from 'react';
 import './card'
 
 class PlayerTwo extends Component {
+    constructor(props){
+        super(props)
+    }
     render() {
         return (
-          <div>
-            <BootstrapTable data={this.props.data}>
-              <TableHeaderColumn isKey dataField='id'>
-                ID
-              </TableHeaderColumn>
-              <TableHeaderColumn dataField='name'>
-                Name
-              </TableHeaderColumn>
-              <TableHeaderColumn dataField='value'>
-                Value
-              </TableHeaderColumn>
-            </BootstrapTable>
+          <div className="player-side">
+              WORKING PLAYER 2
           </div>
         );
     }
