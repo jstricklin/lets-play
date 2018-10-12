@@ -21,9 +21,18 @@ body {
     justify-content: space-between;
     background: grey;
 }
-.card {
+.card-img-top {
+    /* display: flex; */
+    /* justify-content:center; */
+    overflow: hidden;
 }
-.cardImg img {
+.card {
+    margin: 1rem;
+}
+.card-img-top img {
+    max-width: 200px;
+    height: auto;
+    
 }
 
 code {

@@ -18,6 +18,9 @@ class GameBoard extends React.Component {
     constructor(props){
         super(props);
         this.state = {
+            scoreP1 : 0,
+            scoreP2: 0,
+            playerOneTurn: true,
             cards: [
                 {
                     img: show1,
@@ -57,15 +60,32 @@ class GameBoard extends React.Component {
                 },
             ]
         }
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleTurn = (e)=> {
+        this.setState(state => ({
+            playerOneTurn: !this.state.playerOneTurn
+        }))
+    }
+    handleScore = (e)=> {
+
+    }
+    handleClick = (e) => {
+        console.log('this.handleClick')
+        this.handleScore();
+        this.handleTurn();
     }
 
     render(){
         return (
             <div className="game-board">
-                SCORE 1
-                <PlayerOne cards={this.state.cards}></PlayerOne>
-                <PlayerTwo cards={this.state.cards}></PlayerTwo>
-                SCORE 2
+                SCORE: {this.state.scoreP2}
+                {this.state.playerOneTurn ? <p></p> : <p>Player Two Turn!</p>}
+                <PlayerOne turn={this.state.playerOneTurn} onClickHandler={this.handleClick} cards={this.state.cards}></PlayerOne>
+                <PlayerTwo turn={this.state.playerOneTurn} onClickHandler={this.handleClick} cards={this.state.cards}></PlayerTwo>
+                { this.state.playerOneTurn ? <p>Player One Turn!</p> : <p></p> }
+                SCORE: {this.state.scoreP1}
             </div>
         )
     }
