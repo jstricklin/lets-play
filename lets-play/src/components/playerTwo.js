@@ -1,6 +1,6 @@
 import './card'
 
-class PlayerOne extends Component {
+class PlayerTwo extends Component {
     render() {
         return (
           <div>
@@ -19,4 +19,4 @@ class PlayerOne extends Component {
         );
     }
 }
-export default PlayerOne
+export default PlayerTwo
