@@ -5,10 +5,11 @@ class PlayerOne extends Component {
     constructor(props){
         super(props)
     }
+    cardList = this.props.cards.map(prop => <p>test</p>)
     render() {
         return (
           <div className="player-side">
-              Working PlayerOne
+              {this.cardList}
           </div>
         );
     }
