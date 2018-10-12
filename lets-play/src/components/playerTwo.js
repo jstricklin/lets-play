@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './card'
+import Card from './card'
 
 class PlayerTwo extends Component {
     constructor(props){
         super(props)
     }
-    cardList = this.props.cards.map(prop => <p>test</p>)
+    cardList = this.props.cards.map(prop => <Card imgSrc={prop.img} ></Card>)
     render() {
         return (
           <div className="player-side">

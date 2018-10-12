@@ -3,6 +3,16 @@ import PlayerOne from './playerOne';
 import PlayerTwo from './playerTwo';
 import ScoreTracker from './scoreTracker';
 
+import show1 from '../pics/show01.jpg';
+import show2 from '../pics/show02.jpg';
+import show3 from '../pics/show03.jpg';
+import show4 from '../pics/show04.jpg';
+import show5 from '../pics/show05.jpg';
+import show6 from '../pics/show06.jpg';
+import show7 from '../pics/show07.jpg';
+import show8 from '../pics/show08.jpg';
+import show9 from '../pics/show09.jpg';
+
 class GameBoard extends React.Component {
 
     constructor(props){
@@ -10,39 +20,39 @@ class GameBoard extends React.Component {
         this.state = {
             cards: [
                 {
-                    img: './show01.jpg',
+                    img: show1,
                     val: 1
                 },
                 {
-                    img: './show02.jpg',
+                    img: show2,
                     val: 2
                 },
                 {
-                    img: './show03.jpg',
+                    img: show3,
                     val:3
                 },
                 {
-                    img: './show04.jpg',
+                    img: show4,
                     val:4
                 },
                 {
-                    img: './show05.jpg',
+                    img: show5,
                     val:5
                 },
                 {
-                    img: './show06.jpg',
+                    img: show6,
                     val:6
                 },
                 {
-                img: './show07.jpg',
+                    img: show7,
                     val:7
                 },
                 {
-                    img: './show08.jpg',
+                    img: show8,
                     val:8
                 },
                 {
-                    img: './show9.jpg',
+                    img: show9,
                     val:9
                 },
             ]

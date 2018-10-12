@@ -4,8 +4,10 @@ const Card = (props) => {
 
 
     return (
-        <div>
-            CARD
+        <div className="card">
+            <img src={props.imgSrc} alt="card" />
         </div>
     )
 }
+
+export default Card;

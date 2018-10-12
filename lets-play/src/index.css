@@ -21,6 +21,10 @@ body {
     justify-content: space-between;
     background: grey;
 }
+.card {
+}
+.cardImg img {
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
