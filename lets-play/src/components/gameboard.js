@@ -1,4 +1,27 @@
 import React from "react";
-import './playerOne';
-import './playerTwo';
-import './scoreTracker';
+import PlayerOne from './playerOne';
+import PlayerTwo from './playerTwo';
+import ScoreTracker from './scoreTracker';
+
+class GameBoard extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            cards: []
+        }
+    }
+
+    render(){
+        return (
+            <div>
+                <PlayerOne></PlayerOne>
+                GameBoard
+                <PlayerTwo></PlayerTwo>
+            </div>
+        )
+    }
+
+}
+
+export default GameBoard;
